@@ -1,7 +1,7 @@
-const jokeEl = document.getElementById('joke')
-const jokeBtn = document.getElementById('jokeBtn')
+const jokeElement = document.getElementById('joke')
+const jokeButton = document.getElementById('jokeButton')
 
-jokeBtn.addEventListener('click', generateJoke)
+jokeButton.addEventListener('click', generateJoke)
 
 generateJoke()
 
@@ -19,7 +19,7 @@ async function generateJoke() {
 
   const data = await res.json()
 
-  jokeEl.innerHTML = data.joke
+  jokeElement.innerHTML = data.joke
 }
 
 // USING .then()
@@ -33,6 +33,6 @@ async function generateJoke() {
 //   fetch('https://icanhazdadjoke.com', config)
 //     .then((res) => res.json())
 //     .then((data) => {
-//       jokeEl.innerHTML = data.joke
+//       jokeElement.innerHTML = data.joke
 //     })
 // }
