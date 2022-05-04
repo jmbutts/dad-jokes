@@ -13,6 +13,8 @@ async function generateJoke() {
     },
   }
 
+// 'config' is the const that holds the header: {Accept: 'application/json'} info
+
   const res = await fetch('https://icanhazdadjoke.com', config)
 
   const data = await res.json()
